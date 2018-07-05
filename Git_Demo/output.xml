@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180703 17:12:18.598" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\bp6132\git\Automation_Workspace\UI_Demo\Git_Demo" id="s1" name="Git Demo">
+<suite source="C:\Users\bp6132\git\Automation_Workspace\UI_Demo\Git_Demo\Amazon_UI_Test" id="s1-s1" name="Amazon UI Test">
+<suite source="C:\Users\bp6132\git\Automation_Workspace\UI_Demo\Git_Demo\Amazon_UI_Test\Tests" id="s1-s1-s1" name="Tests">
+<suite source="C:\Users\bp6132\git\Automation_Workspace\UI_Demo\Git_Demo\Amazon_UI_Test\Tests\Amazon_UITests.robot" id="s1-s1-s1-s1" name="Amazon UITests">
+<test id="s1-s1-s1-s1-t1" name="Openthepage">
+<kw name="Homepage" library="1stpage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180703 17:12:22.517" level="INFO">Opening browser 'gc' to base url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20180703 17:12:54.438" starttime="20180703 17:12:22.516"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180703 17:12:54.665" starttime="20180703 17:12:54.441"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${Sign_in}</arg>
+</arguments>
+<status status="PASS" endtime="20180703 17:12:55.134" starttime="20180703 17:12:54.666"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>xpath=${Sign_in}</arg>
+</arguments>
+<msg timestamp="20180703 17:12:55.136" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="nav-link-accountList"]'</msg>
+<status status="PASS" endtime="20180703 17:12:55.287" starttime="20180703 17:12:55.135"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${Sign_Button}</arg>
+</arguments>
+<status status="PASS" endtime="20180703 17:12:55.383" starttime="20180703 17:12:55.288"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Sign_Button}</arg>
+</arguments>
+<msg timestamp="20180703 17:12:55.388" level="INFO">Clicking element '//*[@id="nav-flyout-ya-signin"]/a/span'.</msg>
+<status status="PASS" endtime="20180703 17:12:57.258" starttime="20180703 17:12:55.385"></status>
+</kw>
+<status status="PASS" endtime="20180703 17:12:57.260" starttime="20180703 17:12:22.513"></status>
+</kw>
+<status status="PASS" endtime="20180703 17:12:57.262" critical="yes" starttime="20180703 17:12:22.511"></status>
+</test>
+<status status="PASS" endtime="20180703 17:12:57.265" starttime="20180703 17:12:19.065"></status>
+</suite>
+<status status="PASS" endtime="20180703 17:12:57.270" starttime="20180703 17:12:19.061"></status>
+</suite>
+<status status="PASS" endtime="20180703 17:12:57.273" starttime="20180703 17:12:19.056"></status>
+</suite>
+<status status="PASS" endtime="20180703 17:12:57.276" starttime="20180703 17:12:18.791"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Git Demo" pass="1">Git Demo</stat>
+<stat fail="0" id="s1-s1" name="Amazon UI Test" pass="1">Git Demo.Amazon UI Test</stat>
+<stat fail="0" id="s1-s1-s1" name="Tests" pass="1">Git Demo.Amazon UI Test.Tests</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="Amazon UITests" pass="1">Git Demo.Amazon UI Test.Tests.Amazon UITests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

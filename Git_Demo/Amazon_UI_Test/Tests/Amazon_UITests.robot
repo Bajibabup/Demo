@@ -6,6 +6,7 @@ Library    Screenshot
   
 *** Test Cases ***
 Openthepage
+    [Tag]    Reg
     Homepage
     # Selenium2Library.Set Screenshot Directory    Robot_UIsamples/Screen_Shots   
     # Take Screenshot  Amazon.jpg
